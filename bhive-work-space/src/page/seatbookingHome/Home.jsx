@@ -2,7 +2,9 @@ import React from "react";
 import { Footer } from "../../components/footer/Footer";
 import coWorkingman from "../../assets/coworkingman.svg";
 import backgroundHexagon from "../../assets/backgroundHexagon.svg";
+import coworker from "../../assets/coworkerBg.svg";
 import "./style.scss";
+import { Specifications } from "../../components/specifications/Specifications";
 
 export const Home = () => {
   return (
@@ -20,16 +22,22 @@ export const Home = () => {
               <span className="rate">₹199/-!</span>
             </h2>
           </div>
-          <span className="coworking">
+          <div
+            className="coworking"
+            style={{
+              backgroundImage: `url(${coworker})`,
+            }}
+          >
             <img
               src={coWorkingman}
               className="coworking"
               alt="coWorkingman logo"
             />
-          </span>
+          </div>
         </div>
       </div>
 
+      <Specifications />
       <Footer />
     </div>
   );
