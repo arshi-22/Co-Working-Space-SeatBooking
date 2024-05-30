@@ -1,10 +1,11 @@
 import React from "react";
 import { Footer } from "../../components/footer/Footer";
-import coWorkingman from "../../assets/coworkingman.svg";
-import backgroundHexagon from "../../assets/backgroundHexagon.svg";
-import coworker from "../../assets/coworkerBg.svg";
+import coWorkingman from "/assests/coworkingman.svg";
+import backgroundHexagon from "/assests/backgroundHexagon.svg";
+import coworker from "/assests/coworkerBg.svg";
 import "./style.scss";
 import { Specifications } from "../../components/specifications/Specifications";
+import { WorkSpaceCard } from "../../components/workspacecard/WorkSpaceCard";
 
 export const Home = () => {
   return (
@@ -36,8 +37,8 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
       <Specifications />
+      <WorkSpaceCard />
       <Footer />
     </div>
   );

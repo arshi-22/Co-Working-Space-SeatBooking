@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Community Events",
+    "icon": "assets/community.svg"
+  },
+  { "title": "Gym Facilities", "icon": "assets/gym.svg" },
+  { "title": "High-Speed WiFi", "icon": "[assets/wifi.svg]" },
+  { "title": "Cafe & Tea Bar", "icon": "[assets/coffee.svg]" },
+  { "title": "Affortable", "icon": "[assets/affordable.svg]" },
+  { "title": "Comfort Launges", "icon": "[assets/comfort.svg]" },
+  { "title": "Quick Booking", "icon": "[assets/clock.svg]" },
+  { "title": "Sports Area", "icon": "[assets/sports.svg]" }
+]

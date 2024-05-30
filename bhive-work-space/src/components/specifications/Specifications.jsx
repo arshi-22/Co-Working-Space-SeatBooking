@@ -1,33 +1,31 @@
-import React from "react";
-import Coffee from "../../assets/Group.svg";
-import Gym from "../../assets/gym.svg";
-import Community from "../../assets/community.svg";
-import Clock from "../../assets/clock.svg";
-import Comfort from "../../assets/comfort.svg";
-import Affordable from "../../assets/affordable.svg";
-import Wifi from "../../assets/wifi.svg";
-import Sports from "../../assets/sports.svg";
+import React, { useEffect } from "react";
+import "./style.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { setFeatures } from "../../redux/feature/workSpaceSlice";
+import features from "../../data/features.json";
 
-export const Specifications = ({ props }) => {
-  const features = [
-    { title: "Community Events", icon: Community },
-    { title: "Gym Facilities", icon: Gym },
-    { title: "High-Speed WiFi", icon: Wifi },
-    { title: "Cafe & Tea Bar", cion: Coffee },
-    { title: "Affortable", icon: Affordable },
-    { title: "Comfort Launges", icon: Comfort },
-    { title: "Quick Booking", icon: Clock },
-    { title: "Sports Area", icon: Sports },
-  ];
+export const Specifications = () => {
+  // const { features } = useSelector((state) => state.workSpace);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    // dispatch(setFeatures(features));
+  }, []);
 
   return (
-    <grid>
-      {features.map((item) => (
-        <grid key={item.title}>
-          <img src={`${item.icon}`} className="" alt="icons"></img>
-          <h7>{item.title}</h7>
-        </grid>
-      ))}
-    </grid>
+    <div className="container">
+      <h1>Why Choose us?</h1>
+      <div className="features-grid">
+        {features.map((item, index) => (
+          <div key={item.title} className="feature-item">
+            <img src={item.icon} alt={item.title} className="feature-icon" />
+            <div className="feature-content">
+              <h3>{item.title}</h3>
+              <p>One liner details about the feature</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
