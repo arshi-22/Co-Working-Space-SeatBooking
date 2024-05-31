@@ -1,0 +1,30 @@
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.titlecontainer {
+  width: 806px;
+  height: 254px;
+  margin-top: 170px;
+  margin-left: 120px;
+}
+.title {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70.19px;
+  letter-spacing: -1px;
+  color: #263238;
+  margin-left: 2rem;
+}
+.rate {
+  font-size: 58px;
+  font-family: 700;
+  line-height: 70.19px;
+  letter-spacing: -1px;
+  color: #ffbb00;
+}
+.coworking {
+  width: 388px;
+  height: 388px;
+}

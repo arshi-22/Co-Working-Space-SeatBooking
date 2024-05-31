@@ -1,0 +1,52 @@
+$primary-color: #000000;
+$secondary-color: #f2b304;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 90px;
+  position: sticky;
+
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
+@media (min-width: 320px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    gap: 5rem;
+  }
+}
+
+.bhiveLogo {
+  margin-top: 24px;
+  margin-left: 120px;
+}
+.logo {
+  height: 40px;
+  width: 125px;
+}
+.contact {
+  border: solid 1px $secondary-color;
+  border-radius: 4px;
+  width: 42px;
+  height: 42px;
+  margin-top: 24px;
+  margin-right: 162px;
+}
+.callIcon {
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+}
