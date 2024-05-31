@@ -9,7 +9,7 @@ import { WorkSpaceCard } from "../../components/workspacecard/WorkSpaceCard";
 
 export const Home = () => {
   return (
-    <div >
+    <div>
       <div>
         <div
           className="heading"
@@ -20,7 +20,7 @@ export const Home = () => {
           <div title="titlecontainer">
             <h2 className="title">
               Host your meeting with world-class amenities. Starting at
-              <span className="rate">₹199/-!</span>
+              <span className="rate"> ₹199/-!</span>
             </h2>
           </div>
           <div

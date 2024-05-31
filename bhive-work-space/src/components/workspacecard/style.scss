@@ -11,41 +11,6 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 12px;
 }
-@media (min-width: 320px) {
-  .workspace-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 12px;
-  }
-}
-@media (min-width: 480px) {
-  .workspace-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 12px;
-  }
-}
-@media (min-width: 600px) {
-  .workspace-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 12px;
-  }
-}
-@media (min-width: 801px) {
-  .workspace-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 12px;
-  }
-  @media (min-width: 1025px) {
-    .workspace-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      padding: 12px;
-    }
-  }
-}
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -162,4 +127,74 @@
   position: absolute;
   top: 38%;
   left: 9rem;
+}
+.offer {
+  font-size: 15px;
+}
+.bulk-pass {
+  font-size: 14px;
+  line-height: 16.94px;
+}
+.day-pass {
+  font-size: 14px;
+  line-height: 16.94px;
+}
+@media (max-width: 768px) {
+  .workspace-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+  .card-container {
+    max-width: 90vw;
+  }
+  .car {
+    max-width: 90vw;
+  }
+  .space-overview-container {
+    margin: 0px;
+  }
+  .space-overview {
+    font-size: 24px;
+    line-height: 45px;
+    letter-spacing: 0.3px;
+  }
+  .next-icon {
+    left: 6rem;
+  }
+  .discount {
+    top: -11%;
+    left: 18%;
+    padding: 4px 9px;
+  }
+  .offer {
+    font-size: 10px;
+  }
+  .pass {
+    font-size: 9px;
+    line-height: 8.2px;
+  }
+  .daypass {
+    font-size: 9px;
+    line-height: 8.2px;
+  }
+  .booking-price {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 801px) {
+  .workspace-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 12px;
+  }
+  @media (min-width: 1025px) {
+    .workspace-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 12px;
+    }
+  }
 }

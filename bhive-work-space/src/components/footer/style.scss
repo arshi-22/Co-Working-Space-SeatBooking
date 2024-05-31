@@ -47,3 +47,26 @@
   font-weight: 400;
   line-height: 20px;
 }
+@media (max-width: 768px) {
+  .download-title {
+    font-size: 24px;
+    line-height: 45px;
+    letter-spacing: 0.3px;
+    color: rgba(38, 50, 56, 1);
+  }
+  .download-description {
+    display: none;
+  }
+  .playstore {
+    flex-direction: column;
+  }
+  .download-content {
+    padding-left: 0px;
+  }
+  .store {
+    max-width: 90vw;
+  }
+  .download-container {
+    margin-left: 1rem;
+  }
+}

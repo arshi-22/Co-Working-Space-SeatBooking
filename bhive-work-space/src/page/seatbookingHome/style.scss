@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .titlecontainer {
   width: 806px;
   height: 254px;
@@ -27,4 +28,27 @@
 .coworking {
   width: 388px;
   height: 388px;
+}
+@media (max-width: 768px) {
+  .heading {
+    flex-direction: column-reverse;
+  }
+  .title {
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.2px;
+    letter-spacing: -1px;
+    align-content: Center;
+  }
+  .rate {
+    width: 600;
+    font-size: 20px;
+    line-height: 24.2px;
+    letter-spacing: -1px;
+    align-content: center;
+  }
+  .coworking {
+    max-width: 100vw;
+  }
 }

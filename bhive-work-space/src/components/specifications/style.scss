@@ -2,41 +2,17 @@
   margin: 3.8rem;
   border-radius: 10px;
 }
-
-h1 {
+.why-choose-us {
   color: #263238;
   margin-bottom: 2rem;
+  font-weight: 700;
+  size: 36px;
+  line-height: 45px;
 }
-
 .features-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-@media (min-width: 320px) {
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 480px) {
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 600px) {
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 801px) {
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 .feature-item {
   display: flex;
   align-items: center;
@@ -45,34 +21,27 @@ h1 {
   gap: 1rem;
   padding: 1rem;
   border-radius: 0.4rem;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .feature-item:hover {
   background-color: #f0f0f0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
 }
-
 .feature-content {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-.feature-item:hover {
-  transform: translateY(-10px);
-}
-
 .feature-item:hover .feature-content {
   transform: translateY(10px);
   opacity: 1;
 }
-
 .feature-content h3 {
   margin: 0;
   font-size: 1rem;
   color: #263238;
   transition: transform 0.3s ease;
 }
-
 .feature-content p {
   margin: 0;
   font-size: 0.875rem;
@@ -80,11 +49,50 @@ h1 {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 .feature-item:hover .feature-content h3 {
   transform: translateY(-10px);
 }
-
 .feature-item:hover .feature-content p {
   opacity: 1;
+}
+.feature-icon {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container {
+    margin: 1rem;
+  }
+  .why-choose-us {
+    font-size: 24px;
+    line-height: 45px;
+  }
+  .feature-content h3 {
+    font-size: 0.5rem;
+  }
+  .feature-content p {
+    font-size: 0.5rem;
+  }
+  .feature-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 801px) {
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

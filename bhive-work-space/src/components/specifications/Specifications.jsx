@@ -5,7 +5,7 @@ import { setFeatures } from "../../redux/feature/workSpaceSlice";
 import { FEATURES } from "../../data/features.js";
 
 export const Specifications = () => {
-  const {feature} = useSelector((state) => state.workSpaceSlice);
+  const { feature } = useSelector((state) => state.workSpaceSlice);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export const Specifications = () => {
 
   return (
     <div className="container">
-      <h1>Why Choose us?</h1>
+      <h1 className="why-choose-us">Why Choose us?</h1>
       <div className="features-grid">
         {feature?.map((item, index) => (
           <div key={item.title} className="feature-item">
