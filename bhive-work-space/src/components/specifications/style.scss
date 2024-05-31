@@ -16,6 +16,7 @@ h1 {
 .feature-item {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1rem;
   border-radius: 0.4rem;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;

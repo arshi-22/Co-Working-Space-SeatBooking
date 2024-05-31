@@ -21,14 +21,17 @@ export const WorkSpaceCard = () => {
                     src={direction}
                     alt="location icon"
                   />
-                  <span>{}</span>
+                  <span>6 Kms</span>
                 </div>
               </div>
               <img className="card-image" src={`${item.images}`} alt="" />
               <div className="booking">
                 <div className="daypass">
                   <h4>Day Pass</h4>
-                  <span>₹{item.day_pass_price} </span>
+                  <span>
+                    ₹{item.day_pass_price}
+                    <span className="perdays">/ Day</span>{" "}
+                  </span>
                 </div>
                 <div className="bulkpass">
                   <div className="discount">
@@ -36,7 +39,9 @@ export const WorkSpaceCard = () => {
                   </div>
                   <div className="pass">
                     <h4>Bulk Pass</h4>
-                    <span>$ 2000/10 Days</span>
+                    <span>
+                      $ 2400<span className="perdays">/10 Days</span>
+                    </span>
                   </div>
                 </div>
               </div>

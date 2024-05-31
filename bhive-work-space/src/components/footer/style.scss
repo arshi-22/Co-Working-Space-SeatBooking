@@ -1,9 +1,37 @@
+.download-container {
+  margin-left: 4rem;
+
+  .download-title {
+    color: #605f5f;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .playstore {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.41);
+  }
+}
+.download-content {
+  margin: auto;
+  padding-left: 7rem;
+}
+.download-description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #605f5f;
+  text-align: center;
+}
 .footer {
   background-color: #222e34;
   height: 44px;
   width: 100%;
   margin-left: 1px;
-  margin-top: 2536px;
+  // margin-top: 2536px;
 }
 .layout {
   padding: 0.6rem;

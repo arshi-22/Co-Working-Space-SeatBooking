@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
-import callIcon from "../../../public/assests/call.svg";
-import bhiveLogo from "../../../public/assests/BHIVE.svg";
+import callIcon from "/assests/call.svg";
+import bhiveLogo from "/assests/BHIVE.svg";
 
 export const Header = () => {
   return (
