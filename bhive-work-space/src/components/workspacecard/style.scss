@@ -12,7 +12,6 @@
   padding: 12px;
 }
 .card-container {
-  max-width: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -27,7 +26,6 @@
   padding: 1.5rem;
   color: #263238;
   width: 370px;
-  height: 384px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.41);
 }
 .card-title {
@@ -41,6 +39,10 @@
 .location {
   border: 1px solid rgba(238, 231, 231, 1);
   border-radius: 6.47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 52px;
   width: 52px;
   align-content: center;
@@ -50,7 +52,8 @@
   background-color: rgba(249, 249, 249, 1);
 }
 .location-icon {
-  padding: 0.45rem;
+  width: 21px;
+  height: 25px;
 }
 .card-image {
   width: 100%;
@@ -62,16 +65,19 @@
   margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .daypass {
   padding-top: 1rem;
   background-color: #eee7e7;
+  width: 50%;
 }
 .bulkpass {
   position: relative;
+  width: 50%;
 }
-.perdays{
-color: rgba(38, 50, 56, 0.8);
+.perdays {
+  color: rgba(38, 50, 56, 0.8);
 }
 .discount {
   position: absolute;
@@ -89,7 +95,6 @@ color: rgba(38, 50, 56, 0.8);
 .pass {
   padding: 1rem;
   height: 4rem;
-  width: 15rem;
   text-align: left;
   border: 1px solid white;
   border-radius: 10px;

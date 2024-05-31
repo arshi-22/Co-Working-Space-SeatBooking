@@ -30,7 +30,7 @@ export const WorkSpaceCard = () => {
                   <h4>Day Pass</h4>
                   <span>
                     ₹{item.day_pass_price}
-                    <span className="perdays">/ Day</span>{" "}
+                    <span className="perdays">/ Day</span>
                   </span>
                 </div>
                 <div className="bulkpass">

@@ -6,7 +6,7 @@ import Phone from "/assests/phone.svg";
 
 export const Footer = () => {
   return (
-    <>
+    <div className="footer-container">
       <div className="download-container">
         <h1 className="download-title">Donwload our app now</h1>
         <div className="playstore">
@@ -32,6 +32,6 @@ export const Footer = () => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 };

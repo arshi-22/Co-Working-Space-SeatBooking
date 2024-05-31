@@ -9,7 +9,7 @@ import { WorkSpaceCard } from "../../components/workspacecard/WorkSpaceCard";
 
 export const Home = () => {
   return (
-    <div className="container">
+    <div >
       <div>
         <div
           className="heading"
