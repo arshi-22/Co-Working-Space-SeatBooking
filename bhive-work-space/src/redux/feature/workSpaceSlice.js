@@ -3,7 +3,7 @@ import workSpaces from "../../data/data.json";
 
 const initialState = {
   workSpace: [],
-  features: [],
+  feature: [],
 };
 
 const workSpaceSlice = createSlice({
@@ -14,8 +14,7 @@ const workSpaceSlice = createSlice({
       state.workSpace = workSpaces;
     },
     setFeatures: (state, action) => {
-      console.log("===================", action);
-      state.features = action.payload;
+      state.feature = action.payload;
     },
   },
 });

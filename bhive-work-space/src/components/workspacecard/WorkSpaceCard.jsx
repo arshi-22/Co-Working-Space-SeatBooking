@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import direction from "../../../public/assests/assistant_direction.svg";
-import data from "../../data/data.json";
+import { setWorkSpace } from "../../redux/feature/workSpaceSlice";
+import ArrowIcon from "/assests/arrow.svg";
+
 export const WorkSpaceCard = () => {
-  // const { workSpace } = useSelector((state) => state.workSpace);
+  const { workSpace } = useSelector((state) => state.workSpaceSlice);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setWorkSpace());
+  }, []);
 
   return (
     <div className="space-overview-container">
       <h1 className="space-overview">Our Space Overview</h1>
       <div className="workspace-grid">
-        {data.map((item) => (
+        {workSpace.map((item) => (
           <div className="card-container" key={item.id}>
             <div className="card">
               <div className="card-title">
@@ -28,10 +35,17 @@ export const WorkSpaceCard = () => {
               <div className="booking">
                 <div className="daypass">
                   <h4>Day Pass</h4>
-                  <span>
-                    ₹{item.day_pass_price}
+                  <div className="price-details">
+                    <span className="booking-price">
+                      ₹{item.day_pass_price}
+                    </span>
                     <span className="perdays">/ Day</span>
-                  </span>
+                  </div>
+                  <div className="next-icon">
+                    <img src={ArrowIcon} alt="next-icon1" className="" />
+                    <img src={ArrowIcon} alt="next-icon2" className="" />
+                    <img src={ArrowIcon} alt="next-icon3" className="" />
+                  </div>
                 </div>
                 <div className="bulkpass">
                   <div className="discount">
@@ -39,9 +53,15 @@ export const WorkSpaceCard = () => {
                   </div>
                   <div className="pass">
                     <h4>Bulk Pass</h4>
-                    <span>
-                      $ 2400<span className="perdays">/10 Days</span>
-                    </span>
+                    <div className="price-details">
+                      <span className="booking-price">$ 2400</span>
+                      <span className="perdays">/10 Days</span>
+                    </div>
+                    <div className="next-icon">
+                      <img src={ArrowIcon} alt="next-icon1" className="" />
+                      <img src={ArrowIcon} alt="next-icon2" className="" />
+                      <img src={ArrowIcon} alt="next-icon3" className="" />
+                    </div>
                   </div>
                 </div>
               </div>

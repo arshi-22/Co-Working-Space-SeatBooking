@@ -2,21 +2,21 @@ import React, { useEffect } from "react";
 import "./style.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { setFeatures } from "../../redux/feature/workSpaceSlice";
-import features from "../../data/features.json";
+import { FEATURES } from "../../data/features.js";
 
 export const Specifications = () => {
-  // const { features } = useSelector((state) => state.workSpace);
+  const {feature} = useSelector((state) => state.workSpaceSlice);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // dispatch(setFeatures(features));
+    dispatch(setFeatures(FEATURES));
   }, []);
 
   return (
     <div className="container">
       <h1>Why Choose us?</h1>
       <div className="features-grid">
-        {features.map((item, index) => (
+        {feature?.map((item, index) => (
           <div key={item.title} className="feature-item">
             <img src={item.icon} alt={item.title} className="feature-icon" />
             <div className="feature-content">

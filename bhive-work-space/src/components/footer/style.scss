@@ -1,4 +1,4 @@
-.footer-container{
+.footer-container {
   position: sticky;
 }
 .download-container {
@@ -13,11 +13,14 @@
   padding-top: 3rem;
   display: flex;
   justify-content: space-around;
-  border: 1px solid #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.41);
+}
+.store {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
 }
 .download-content {
+  align-content: flex-start;
   margin: auto;
   padding-left: 7rem;
 }
@@ -33,7 +36,6 @@
   height: 44px;
   width: 100%;
   margin-left: 1px;
-  // margin-top: 2536px;
 }
 .layout {
   padding: 0.6rem;
